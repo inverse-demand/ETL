@@ -8,7 +8,7 @@ def etl(directory = '', file_name = '', new_upload = '', db_file_system = ''):
         
         dbfs cp "{0}/{1}" dbfs:/{2}
         
-        """.format(directory, file_name)
+        """.format(directory, file_name, db_file_system)
         
     elif new_upload == False:
         cmd = """
